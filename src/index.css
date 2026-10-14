@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --sena-green: #39A900;
+    --sena-dark: #00324D;
+    --sena-orange: #FC7C13;
+  }
+}
+
+/* Print styling specifically for official SENA GOR-F-085 V02 sheets */
+@media print {
+  @page {
+    size: letter portrait;
+    margin: 10mm;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-page-break {
+    page-break-after: always;
+  }
+
+  .sena-sheet {
+    box-shadow: none !important;
+    border: 1px solid #94a3b8 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  table {
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+}

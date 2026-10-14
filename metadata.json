@@ -1,0 +1,6 @@
+{
+  "name": "SENA GOR-F-085 V02 — Normalizador de Asistencia Académica",
+  "description": "Sistema especializado del SENA para estandarizar listas desorganizadas de aprendices en el formato oficial de asistencia GOR-F-085 V02 con deducción y razonamiento paso a paso.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
